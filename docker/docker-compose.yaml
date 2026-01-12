@@ -918,8 +918,8 @@ services:
       - api
       - web
     ports:
-      - "${EXPOSE_NGINX_PORT:-80}:${NGINX_PORT:-80}"
-      - "${EXPOSE_NGINX_SSL_PORT:-443}:${NGINX_SSL_PORT:-443}"
+      - "${EXPOSE_NGINX_PORT:-9080}:${NGINX_PORT:-80}"
+      - "${EXPOSE_NGINX_SSL_PORT:-9043}:${NGINX_SSL_PORT:-443}"
 
   # OceanBase vector database
   oceanbase:
